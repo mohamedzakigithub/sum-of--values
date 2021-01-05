@@ -4,10 +4,6 @@
 
 A coding challenge to write a function named sum that returns the total of any number of parameters.
 
-<br>
-
-- [Deployed app URL](#Deployed-app-URL)
-
 ## Deployed app URL
 
 https://mohamedzakigithub.github.io/sum-of-values/
