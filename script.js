@@ -5,16 +5,16 @@ const buttonEl = document.querySelector("#button");
 
 // Add click listener to button
 buttonEl.addEventListener("click", function () {
-  const inputArray = inputValuesEl.value;
+  const inputString = inputValuesEl.value;
   // get results and assign to output element
-  let result = sum(inputArray);
+  let result = sum(inputString);
   outputEl.innerText = result;
 });
 
-// Function sum declaration
-function sum(arr) {
+// Function declaration
+function sum(str) {
   // use a regular expression to remove non digit characters then split input values on commas and store in an array.
-  const digitsArray = arr.replace(/[^0-9\.\,\-]/g, "").split(",");
+  const digitsArray = str.replace(/[^0-9\.\,\-]/g, "").split(",");
   // parse array elements into floats and check if type is a number
   const parsedArray = digitsArray.map((el) =>
     isNaN(parseFloat(el)) === false ? parseFloat(el) : 0
